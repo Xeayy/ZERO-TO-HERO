@@ -1,0 +1,15 @@
+# 忽略所有 .exe 文件
+*.exe
+
+# 忽略所有 .o 对象文件 (编译中间产物)
+*.o
+
+# 忽略调试文件
+*.pdb
+
+# 忽略 VS Code 的配置文件夹 (可选)
+.vscode/
+
+# 忽略 CLion 的构建文件夹 (如果你以后混用)
+cmake-build-debug/
+cmake-build-release/
