@@ -10,7 +10,7 @@ int main(void){
         a = b;
         b = t;
     } 
-    printf("gcd = %d\n",a);
+    printf("GCD = %d\n",a);
 
     return 0;
 }
