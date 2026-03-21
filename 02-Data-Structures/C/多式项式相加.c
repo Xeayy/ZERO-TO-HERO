@@ -122,7 +122,7 @@ int main()
 	Q = (LinkList)malloc(sizeof(LNode));
 	Q -> next = NULL;
 	CreateLinkList2(L);
-	printf("第一个多项式L为：\n");
+	printf("第一个多项式L为:\n");
 	PrintLinkList(L);
 	
 	CreateLinkList2(Q);
