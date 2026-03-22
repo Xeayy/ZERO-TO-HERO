@@ -15,12 +15,12 @@ int main(void){
     int a,b;
 
     if (scanf("%d %d", &a, &b) != 2) {
-    printf("输入格式错误\n");
+    printf("杈撳叆鏍煎紡閿欒\n");
     return 1;
 }
 
     int x = max (a,b);
-    printf("%d更大\n",x);
+    printf("%d鏇村ぇ\n",x);
 
     return 0;
 }
