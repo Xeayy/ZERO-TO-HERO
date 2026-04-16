@@ -12,6 +12,7 @@ def fetch_weather(city):
         # 把返回的 JSON 字符串转成 Python 字典/列表
         data = response.json()
         return data
+
     except requests.exceptions.Timeout:
         raise Exception('网络超时，请检查连接后重试')
     except requests.exceptions.HTTPError as e:
