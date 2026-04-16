@@ -1,11 +1,15 @@
+from pypinyin import lazy_pinyin
 from api_client import fetch_weather
 from formatter import format_weather
 
 city = input('请输入城市名(拼音)：')
 
+# 测试拼音转换
+city_pinyin = ''.join(lazy_pinyin(city))
+
 try:
     # 1. 从 API 获取原始数据
-    data = fetch_weather(city)
+    data = fetch_weather(city_pinyin)
     # 2. 格式化成好看的字符串
     result = format_weather(data,city)
     # 3. 输出
