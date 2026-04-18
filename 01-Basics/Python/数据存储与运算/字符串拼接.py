@@ -16,5 +16,6 @@ age = 18
 major = '信息安全'
 hobby = 'AI'
 
+# str(int数字) ----> 将int类型的数字转为字符串
 print('大家好，我是' + name + '，今年' + str(age) + '岁，学习的专业是' + major + '，爱好是' + hobby)
-
+print(f'大家好，我是{name}，今年{age}岁，学习的专业是{major}，爱好是{hobby}')

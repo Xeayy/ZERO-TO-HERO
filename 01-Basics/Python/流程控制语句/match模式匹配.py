@@ -1,4 +1,4 @@
-day = input ('请输入星期几（1-7）：')
+day = input ('请输入星期几(1-7))')
 
 match day:
     case '1':
