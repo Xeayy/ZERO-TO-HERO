@@ -38,3 +38,6 @@ while True:
         choice = input('是否继续查询？(y/n):')
         if choice.lower() != 'y':
             break
+
+
+
