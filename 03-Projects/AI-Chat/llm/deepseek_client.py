@@ -12,12 +12,21 @@ def chat(prompt):
 
     client = OpenAI(
     api_key = api_key,
-    base_url = '<https://api.deepseek.com>'
+    base_url = 'https://api.deepseek.com'
     )       # 把创建好的对象赋值给变量 client，之后就可以用 client 来调用聊天功能。
 
-try:
-    response = client.chat.completion.create(
-        
-    )
+    try:
+        response = client.chat.completions.create(
+            model = 'deepseek-chat',
+            messages = [
+                {'role': 'user','content': prompt}
+            ],
+            stream = False
+        )
+        return response.choices[0].message.content
+
+    except Exception as e:
+        return f'调用失败:{str(e)}'
+
 
 
