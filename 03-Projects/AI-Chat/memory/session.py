@@ -9,7 +9,7 @@ class Session:
         """添加一条用户消息到历史中"""
         self.messages.append({'role':'user', 'content':content})
     
-    def add_assitant_message(self,content):
+    def add_assistant_message(self,content):
         """添加一条助手消息到历史中"""
         self.messages.append({'role':'assistant', 'content':content})
 
