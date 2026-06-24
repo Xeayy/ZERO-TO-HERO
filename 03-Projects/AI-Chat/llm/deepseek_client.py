@@ -34,4 +34,44 @@ def chat(messages):
         return f'调用失败:{str(e)}'
 
 
+def chat_stream(messages):
+    """
+    将完整的消息列表发送给 DeepSeek，并以生成器方式逐块返回回复文本。
+    参数：
+        messages: 列表，元素格式如 {'role': 'user','content':'...'}
+    生成：
+        模型回复的字符串片段
+
+    """
+# 普通函数用 return 返回结果，函数就结束了。
+# 生成器函数用 yield 返回结果，但函数不会结束，下次可以继续从 yield 后面执行，再 yield 下一个值。
+    api_key = os.getenv('DEEPSEEK_API_KEY')
+    if not api_key:
+        yield '错误: 未找到 DEEPSEEK_API_KEY, 请检查 .env 文件。'
+        return
+    client = OpenAI(
+        api_key = api_key,
+        base_url='https://api.deepseek.com'
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model = 'deepseek-chat',
+            messages = messages,
+            stream = True   # 关键： 开启流式
+        )
+
+        # 逐块读取流式相应
+        for chunk in response:
+            # chunk.choices[0].delta 可能包含 content(文本片段)
+            # 遍历服务器发来的每一个数据块（chunk）
+            delta = chunk.choices[0].delta
+            if delta.content:
+                yield delta.content
+
+    except Exception as e:
+        yield f'调用失败:{str(e)}'
+
+
+
 
