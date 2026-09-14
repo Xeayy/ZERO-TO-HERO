@@ -1,0 +1,71 @@
+[33m34e87ef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m 搭建 Streamlit 聊天界面，支持多轮对话和清空功能
+[33mdfb7aea[m 实现多轮对话记忆，创建Session类
+[33m0dd2038[m add memory
+[33m54a547a[m add .gitignore
+[33m6d86cb7[m 模型正常回复
+[33m71f86df[m 5.28
+[33m4d4d9f0[m continue
+[33m541f3a4[m 修改项目名
+[33m24ed2ba[m docs: add README
+[33m67b2cb2[m feat: 添加查询历史功能，侧边栏显示，支持清空
+[33m2a356b4[m 4.27
+[33m81ec2ad[m 基本的web
+[33m4a3e010[m feat: web
+[33md06f468[m 4.21
+[33m66edc64[m feat 循环查询功能
+[33m65ef2d6[m 4.19
+[33m00fa4b5[m 4.18
+[33m6480b20[m 4.18
+[33mde135b6[m 查询结果追加到日志文件(weather_log.txt,保存在脚本目录)
+[33m34dae07[m add 体感温度
+[33m26ecc69[m 加入体感温度
+[33m55492fc[m 添加湿度显示，忽略__pycache__
+[33m77c3442[m 4.15
+[33m960ce24[m 4.14
+[33mf8b1342[m 4.14
+[33mc581427[m 4.13
+[33m1522e2f[m 4.10
+[33m1a87724[m 4.7
+[33m95f100d[m 4.5
+[33m6d76b50[m 4.5
+[33m6ccb562[m 4.4
+[33mff8492d[m 3.31
+[33m0cac83e[m 3.30
+[33m655e1c7[m 3.30
+[33m90feb7c[m 3.30
+[33mde38aa3[m 3.30
+[33m717c01c[m .
+[33me1ba3d1[m the end
+[33mc392da1[m 3.25
+[33m5d08147[m 3.25
+[33m5e7abb7[m 3.25
+[33mef11865[m 3.25
+[33m8a59c0e[m 3.25
+[33mf3eecfa[m 3.23
+[33m92b4877[m 3.22
+[33mb832b6b[m 3.22
+[33m8661cc8[m 3.22
+[33mdcf9719[m 3.22
+[33m3f854b9[m 3.22
+[33mc9896c5[m 3.22
+[33m889f1ae[m 3.21
+[33m3436280[m 3.21
+[33md530e19[m 3.19
+[33mbeb1f15[m 3.19
+[33m5766386[m 3.16
+[33m84da63d[m homework
+[33m69b6cf3[m Add python
+[33md903d9e[m repair
+[33m00e8935[m .
+[33m685c95b[m .
+[33m8d54bc1[m 1
+[33me848515[m .md
+[33mfb10149[m add .gitkeep
+[33mb10f22f[m an assignment
+[33m35de4ee[m Add old C project
+[33mc771e9d[m Add old C projects to 99-Archive folder
+[33me5ab041[m Add .gitignore to exclude exe and build files
+[33m84c121a[m Add .gitkeep files to empty folders
+[33m3647682[m Initialize project structure with 5 main categories
+[33mf904c24[m Change project title from 'ZERO-TO-HERO' to 'From Scratch'
+[33m14bbc60[m Initial commit
