@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常见文本标签练习</title>
+</head>
+
+<body>
+  <!-- 一、标题标签 -->
+  <h1>一级标题标签</h1>
+  <h2>二级标题标签</h2>
+  <h3>三级标题标签</h3>
+  <h4>四级标题标签</h4>
+  <h5>五级标题标签</h5>
+  <h6>六级标题标签</h6>
+
+  <!-- 二、段落与文本样式标签 -->
+  <p>这是一个段落标签</p>
+  <p>
+    更改文本样式：<b>字体加粗</b>、<i>斜体</i>、<u>下划线</u>
+  </p>
+
+  <!-- 三、无序列表 -->
+  <ul>
+    <li>无序列表元素 1</li>
+    <li>无序列表元素 2</li>
+    <li>无序列表元素 3</li>
+  </ul>
+
+  <!-- 四、有序列表 -->
+  <ol>
+    <li>有序列表元素 1</li>
+    <li>有序列表元素 2</li>
+    <li>有序列表元素 3</li>
+  </ol>
+
+  <!-- 五、表格：行、数据单元格、表头单元格 -->
+  <h1>table row</h1>
+  <p>tr 标签用于定义表格中的一行。</p>
+
+  <h1>table data</h1>
+  <p>td 标签用于定义表格中的普通数据单元格。</p>
+
+  <h1>table header</h1>
+  <p>th 标签用于定义表格中的表头单元格，其内容默认加粗并居中。</p>
+
+  <table border="1">
+    <caption>学生信息表</caption>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>学号</th>
+        <th>专业</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>张三</td>
+        <td>2026001</td>
+        <td>计算机科学与技术</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>2026002</td>
+        <td>软件工程</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>跨行与跨列示例</h1>
+  <table border="1">
+    <tr>
+      <th colspan="2">跨两列的表头</th>
+      <th>备注</th>
+    </tr>
+    <tr>
+      <td>前端开发</td>
+      <td>HTML / CSS / JavaScript</td>
+      <td rowspan="2">需持续学习</td>
+    </tr>
+    <tr>
+      <td>后端开发</td>
+      <td>Java / Node.js</td>
+    </tr>
+  </table>
+</body>
+
+</html>

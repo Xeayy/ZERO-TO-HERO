@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 表单</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="username">用户名：</label>
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="请输入用户名"
+            autocomplete="username"
+            required
+        >
+        <br><br>
+
+        <label for="password">密码：</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="请输入密码"
+            autocomplete="current-password"
+            required
+        >
+        <br><br>
+
+        <span>性别：</span>
+        <label>
+            <input type="radio" name="gender" value="male" required>
+            男
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">
+            女
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other">
+            其他
+        </label>
+        <br><br>
+
+        <span>爱好：</span>
+        <label>
+            <input type="checkbox" name="hobby" value="sing">
+            唱歌
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="dance">
+            跳舞
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="rap">
+            RAP
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="basketball">
+            篮球
+        </label>
+        <br><br>
+
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>

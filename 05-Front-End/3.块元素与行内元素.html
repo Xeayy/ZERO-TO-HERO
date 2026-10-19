@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块元素与行内元素</title>
+</head>
+<body>
+    <!-- div 是块元素，会独占一行 -->
+    <div class="nav">
+        <a href="#home">链接 1</a>
+        <a href="#news">链接 2</a>
+        <a href="#study">链接 3</a>
+        <a href="#about">链接 4</a>
+        <a href="#contact">链接 5</a>
+    </div>
+
+    <!-- h1 和 p 也是块元素，会从新的一行开始排列 -->
+    <div class="content" id="home">
+        <h1>文章标题</h1>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <p>文章内容</p>
+    </div>
+
+    <!-- span 是行内元素，不会自动换行 -->
+    <span id="news">这是第 1 个 span 标签</span>
+    <span>这是第 2 个 span 标签</span>
+    <span>这是第 3 个 span 标签</span>
+    <span>这是第 4 个 span 标签</span>
+
+    <!-- hr 是块级元素，用于显示水平分隔线 -->
+    <hr>
+
+    <!-- a 是行内元素，可以嵌套在 span 中 -->
+    <span>链接点击这里 <a href="#">链接</a></span>
+</body>
+</html>
