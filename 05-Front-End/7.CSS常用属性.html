@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 常用属性</title>
+
+    <style>
+        .block {
+            background-color: lightcoral;
+        }
+
+        .inline {
+            background-color: lightgreen;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 150px;
+            margin-right: 10px;
+            background-color: lightblue;
+        }
+
+        .div-inline {
+            display: inline;
+            background-color: aquamarine;
+        }
+
+        .span-inline-block {
+            display: inline-block;
+            width: 300px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .display-box {
+            display: inline-block;
+            width: 100px;
+            height: 80px;
+            margin: 5px;
+            background-color: orange;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 50px 'KaiTi';">这是一个 font 复合属性示例</h1>
+    <p style="line-height: 40px;">这是一段文本这是一段长文本这是一段长文本</p>
+
+    <h2>块级元素与行内元素</h2>
+    <div class="block">这是一个块级元素</div>
+    <span class="inline">这是一个行内元素</span>
+
+    <h2>行内块元素</h2>
+    <span class="inline-block">行内块 1</span>
+    <span class="inline-block">行内块 2</span>
+    <span class="inline-block">行内块 3</span>
+
+    <h2>display 属性</h2>
+    <div class="div-inline">这是一个转换成行内元素的 div 标签</div>
+    <span class="span-inline-block">这是一个转换成行内块元素的 span</span>
+    <div class="display-box">width<br>height</div>
+</body>
+</html>

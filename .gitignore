@@ -13,3 +13,10 @@
 # 忽略 CLion 的构建文件夹 (如果你以后混用)
 cmake-build-debug/
 cmake-build-release/
+
+# 忽略压缩归档文件（避免误提交超出 GitHub 单文件 100MB 限制，如 Front-End.7z）
+*.7z
+*.7z.*
+
+# 忽略 Office 临时锁文件（以 ~$ 开头）
+~$*
