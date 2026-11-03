@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 函数</title>
+</head>
+<body>
+    <h1>JavaScript 函数</h1>
+
+    <script>
+        // 无参数、无返回值的函数。
+        function hello() {
+            console.log('Hello, world!');
+        }
+
+        hello();
+
+        // 使用 return 返回函数执行结果。
+        function hello_with_return() {
+            return 'hello, world! - 返回值';
+        }
+
+        let result = hello_with_return();
+        console.log(result);
+        console.log(hello_with_return());
+
+        // 带参数的函数。
+        function hello_with_params(name) {
+            console.log('hello, ' + name);
+        }
+
+        hello_with_params('如花');
+        hello_with_params('Alice');
+
+        // 作用域：函数外声明的变量属于全局作用域。
+        let global_var = '全局变量';
+
+        function local_var_function() {
+            // 函数内声明的变量属于局部作用域。
+            let local_var = '局部变量';
+            console.log('函数内打印全局变量：' + global_var);
+            console.log('函数内打印局部变量：' + local_var);
+        }
+
+        local_var_function();
+        console.log('全局打印全局变量：' + global_var);
+        // local_var 只能在 local_var_function 函数内部访问。
+    </script>
+</body>
+</html>
