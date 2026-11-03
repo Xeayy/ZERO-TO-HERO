@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件处理</title>
+</head>
+<body>
+    <button id="click-button" type="button">点击事件</button>
+    <input id="event-input" type="text" placeholder="请输入内容">
+
+    <script>
+        const clickButton = document.querySelector('#click-button');
+        const eventInput = document.querySelector('#event-input');
+
+        // 点击事件
+        clickButton.addEventListener('click', function () {
+            alert('点击事件触发了');
+        });
+
+        // 聚焦事件
+        eventInput.addEventListener('focus', function () {
+            console.log('获取焦点');
+        });
+
+        // 失去焦点事件
+        eventInput.addEventListener('blur', function () {
+            console.log('失去焦点');
+        });
+    </script>
+</body>
+</html>
