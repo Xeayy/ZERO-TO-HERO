@@ -19,6 +19,7 @@
             alert('点击事件触发了');
         });
 
+
         // 聚焦事件
         eventInput.addEventListener('focus', function () {
             console.log('获取焦点');
@@ -27,6 +28,13 @@
         // 失去焦点事件
         eventInput.addEventListener('blur', function () {
             console.log('失去焦点');
+        });
+
+        // 键盘事件：在输入框中按回车
+        eventInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                console.log('按回车发送:', eventInput.value);
+            }
         });
     </script>
 </body>
