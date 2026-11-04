@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM 独立实战练习</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #chat-box { width: 360px; border: 1px solid #ccc; padding: 12px; border-radius: 8px; }
+    #msg-list { min-height: 120px; border: 1px dashed #ddd; margin-bottom: 12px; padding: 8px; }
+    .msg-item { background: #f0f0f0; padding: 6px 10px; margin: 4px 0; border-radius: 4px; cursor: pointer; }
+    .msg-item:hover { background: #ffd2d2; }
+    .input-row { display: flex; gap: 8px; }
+    #msg-input { flex: 1; padding: 6px; }
+    .count-tip { font-size: 12px; color: #888; margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+  <div id="chat-box">
+    <div id="msg-list">
+      <!-- 新增的消息渲染到这里 -->
+    </div>
+
+    <div class="input-row">
+      <input type="text" id="msg-input" placeholder="输入消息..." maxlength="100">
+      <button id="send-btn" type="button">发送</button>
+    </div>
+    <div class="count-tip">当前字数：<span id="char-count">0</span></div>
+  </div>
+
+  <script>
+    const messageList = document.querySelector('#msg-list');
+    const messageInput = document.querySelector('#msg-input');
+    const sendButton = document.querySelector('#send-btn');
+    const characterCount = document.querySelector('#char-count');
+
+    // 根据输入内容更新字数提示。
+    function updateCharacterCount() {
+      characterCount.textContent = messageInput.value.length;
+    }
+
+    function sendMessage() {
+      const message = messageInput.value.trim();
+
+      if (!message) {
+        messageInput.focus();
+        return;
+      }
+
+      const messageItem = document.createElement('div');
+      messageItem.className = 'msg-item';
+      messageItem.textContent = message;
+      messageItem.title = '点击删除消息';
+      messageItem.addEventListener('click', function () {
+        messageItem.remove();
+      });
+
+      messageList.appendChild(messageItem);
+      messageInput.value = '';
+      updateCharacterCount();
+      messageInput.focus();
+    }
+
+    messageInput.addEventListener('input', updateCharacterCount);
+    sendButton.addEventListener('click', sendMessage);
+    messageInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
