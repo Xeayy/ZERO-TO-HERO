@@ -6,5 +6,5 @@ public class Dog {
     String name; // 名字
     int age; // 年龄
     double weight; // 体重
-    String color; // 毛发颜色
+    String color; // 颜色
 }
