@@ -18,7 +18,26 @@ public class Test {
                 2. 调用方式:
                         方式一: 类名调用 (推荐)
                         方式二: 对象名调用
-         */
-        
+        */
+
+        // 最初都是小雯老师上课
+        // Student 这个类所有对象的 teacherName 都是小雯老师
+        Student.teacherName = "小雯老师";
+
+        // 创建第一个学生对象
+        Student stu1 = new Student();
+        stu1.name = "小诗诗";
+        stu1.age = 19;
+
+        // 创建第二个学生对象
+        Student stu2 = new Student();
+        stu2.name = "小丹丹";
+        stu2.age = 20;
+        Student.teacherName = "阿玮老师";
+
+        // 输出打印
+        System.out.println(stu1.name + "," + stu1.age + "," + Student.teacherName);
+        System.out.println(stu2.name + "," + stu2.age + "," + Student.teacherName);
+
     }
 }
